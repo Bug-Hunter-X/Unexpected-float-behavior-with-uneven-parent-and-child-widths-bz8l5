@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code intends to create two divs that each take up 50% of their parent container's width and float side-by-side. However, if the parent container's width is not an even multiple of the div's width (50%), some browsers may render the divs incorrectly, causing them to overflow their parent or overlap.
