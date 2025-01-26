@@ -1,0 +1,14 @@
+The issue can be resolved by using flexbox instead of floats:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* To account for padding and border */
+}
+
+.parent {
+  display: flex;
+}
+```
+
+This approach ensures a consistent layout across different browsers, regardless of the parent container's width.
